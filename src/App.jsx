@@ -1,33 +1,27 @@
 
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom'
 
-//import { useState } from 'react'
-
 import Navbar2 from './components/Navbar/Navbar'
 import ItemListContainer from './components/ItemListContainer/itemListContainer'
 import ItemDetailContainer from './pages/ItemDetailContainer/ItemDetailContainer'
 import Cart from './pages/Cart/Cart'
 
-// .css
+
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import CartContextProvider from './context/CartContext'
 
 
 function App() {
-  //const [count, setCount] = useState(0)
-  const saludo = 'saludando' // estado
-
-  const saludar = () => {
-      console.log('hola soy app')
-  } 
-
+  console.log('App')
+  
   return (
     <BrowserRouter>
       <Navbar2/>
       <Routes>
-        <Route path='/' element={<ItemListContainer greeting={saludo} saludar={ saludar } />} />
-        <Route path='/categoria/:categoriaId' element={<ItemListContainer greeting={saludo} saludar={ saludar } />} />
+        <Route path='/' element={<ItemListContainer  />} />
+        <Route path='/categoria/:categoriaId' element={<ItemListContainer  />} />
         <Route path='/detail/:productId' element={<ItemDetailContainer />} />
         <Route path='/cart'  element={<Cart />}/>
         
