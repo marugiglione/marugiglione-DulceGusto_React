@@ -3,7 +3,7 @@
 Hola! Este es un sitio web, donde aplico un carrito a un emprendimiento de tortas (el cual aún no se encuentra en funcionamiento ya que le falta diseño). 
 El sitio será presentado como proyecto en el curso de React, dictado por CoderHouse.
 
-##Dependencias
+#Dependencias
 Historial de los paquetes instalados.
 
 | Dependencias | README |
